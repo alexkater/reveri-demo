@@ -1,0 +1,537 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A95C36FB29A57FD000C3F4DF /* ReveriApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95C36FA29A57FD000C3F4DF /* ReveriApp.swift */; };
+		A95C36FD29A57FD000C3F4DF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95C36FC29A57FD000C3F4DF /* ContentView.swift */; };
+		A95C36FF29A57FD100C3F4DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A95C36FE29A57FD100C3F4DF /* Assets.xcassets */; };
+		A95C370229A57FD100C3F4DF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A95C370129A57FD100C3F4DF /* Preview Assets.xcassets */; };
+		A95C370C29A57FD100C3F4DF /* ProductTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95C370B29A57FD100C3F4DF /* ProductTests.swift */; };
+		A95C372629A5801B00C3F4DF /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95C372529A5801B00C3F4DF /* ApiService.swift */; };
+		A95C372929A580DD00C3F4DF /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95C372829A580DD00C3F4DF /* Product.swift */; };
+		A95C372F29A584D600C3F4DF /* ApiServiceIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95C372E29A584D600C3F4DF /* ApiServiceIntegrationTests.swift */; };
+		A95C373229A585D600C3F4DF /* ProductListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95C373029A585D600C3F4DF /* ProductListViewModel.swift */; };
+		A95C373329A585D600C3F4DF /* ProductListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95C373129A585D600C3F4DF /* ProductListView.swift */; };
+		A95C373629A5870300C3F4DF /* CartService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95C373529A5870300C3F4DF /* CartService.swift */; };
+		A95C373829A5889900C3F4DF /* CartServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95C373729A5889900C3F4DF /* CartServiceTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A95C370829A57FD100C3F4DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A95C36EF29A57FD000C3F4DF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A95C36F629A57FD000C3F4DF;
+			remoteInfo = Reveri;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A95C36F729A57FD000C3F4DF /* Reveri.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reveri.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A95C36FA29A57FD000C3F4DF /* ReveriApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReveriApp.swift; sourceTree = "<group>"; };
+		A95C36FC29A57FD000C3F4DF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A95C36FE29A57FD100C3F4DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A95C370129A57FD100C3F4DF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A95C370729A57FD100C3F4DF /* ReveriTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReveriTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A95C370B29A57FD100C3F4DF /* ProductTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTests.swift; sourceTree = "<group>"; };
+		A95C372529A5801B00C3F4DF /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		A95C372829A580DD00C3F4DF /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		A95C372E29A584D600C3F4DF /* ApiServiceIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiServiceIntegrationTests.swift; sourceTree = "<group>"; };
+		A95C373029A585D600C3F4DF /* ProductListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewModel.swift; sourceTree = "<group>"; };
+		A95C373129A585D600C3F4DF /* ProductListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListView.swift; sourceTree = "<group>"; };
+		A95C373529A5870300C3F4DF /* CartService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartService.swift; sourceTree = "<group>"; };
+		A95C373729A5889900C3F4DF /* CartServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartServiceTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A95C36F429A57FD000C3F4DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A95C370429A57FD100C3F4DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A95C36EE29A57FD000C3F4DF = {
+			isa = PBXGroup;
+			children = (
+				A95C36F929A57FD000C3F4DF /* Reveri */,
+				A95C370A29A57FD100C3F4DF /* ReveriTests */,
+				A95C36F829A57FD000C3F4DF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A95C36F829A57FD000C3F4DF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A95C36F729A57FD000C3F4DF /* Reveri.app */,
+				A95C370729A57FD100C3F4DF /* ReveriTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A95C36F929A57FD000C3F4DF /* Reveri */ = {
+			isa = PBXGroup;
+			children = (
+				A95C36FC29A57FD000C3F4DF /* ContentView.swift */,
+				A95C36FA29A57FD000C3F4DF /* ReveriApp.swift */,
+				A95C36FE29A57FD100C3F4DF /* Assets.xcassets */,
+				A95C372729A580D200C3F4DF /* Models */,
+				A95C370029A57FD100C3F4DF /* Preview Content */,
+				A95C373429A585E900C3F4DF /* Screens */,
+				A95C372429A5801000C3F4DF /* Services */,
+			);
+			path = Reveri;
+			sourceTree = "<group>";
+		};
+		A95C370029A57FD100C3F4DF /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A95C370129A57FD100C3F4DF /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A95C370A29A57FD100C3F4DF /* ReveriTests */ = {
+			isa = PBXGroup;
+			children = (
+				A95C372D29A584CA00C3F4DF /* Services */,
+				A95C372A29A5834900C3F4DF /* Model */,
+			);
+			path = ReveriTests;
+			sourceTree = "<group>";
+		};
+		A95C372429A5801000C3F4DF /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A95C372529A5801B00C3F4DF /* ApiService.swift */,
+				A95C373529A5870300C3F4DF /* CartService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A95C372729A580D200C3F4DF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A95C372829A580DD00C3F4DF /* Product.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A95C372A29A5834900C3F4DF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A95C370B29A57FD100C3F4DF /* ProductTests.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A95C372D29A584CA00C3F4DF /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A95C372E29A584D600C3F4DF /* ApiServiceIntegrationTests.swift */,
+				A95C373729A5889900C3F4DF /* CartServiceTests.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A95C373429A585E900C3F4DF /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				A95C373029A585D600C3F4DF /* ProductListViewModel.swift */,
+				A95C373129A585D600C3F4DF /* ProductListView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A95C36F629A57FD000C3F4DF /* Reveri */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A95C371B29A57FD100C3F4DF /* Build configuration list for PBXNativeTarget "Reveri" */;
+			buildPhases = (
+				A95C36F329A57FD000C3F4DF /* Sources */,
+				A95C36F429A57FD000C3F4DF /* Frameworks */,
+				A95C36F529A57FD000C3F4DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Reveri;
+			productName = Reveri;
+			productReference = A95C36F729A57FD000C3F4DF /* Reveri.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A95C370629A57FD100C3F4DF /* ReveriTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A95C371E29A57FD100C3F4DF /* Build configuration list for PBXNativeTarget "ReveriTests" */;
+			buildPhases = (
+				A95C370329A57FD100C3F4DF /* Sources */,
+				A95C370429A57FD100C3F4DF /* Frameworks */,
+				A95C370529A57FD100C3F4DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A95C370929A57FD100C3F4DF /* PBXTargetDependency */,
+			);
+			name = ReveriTests;
+			productName = ReveriTests;
+			productReference = A95C370729A57FD100C3F4DF /* ReveriTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A95C36EF29A57FD000C3F4DF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					A95C36F629A57FD000C3F4DF = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					A95C370629A57FD100C3F4DF = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = A95C36F629A57FD000C3F4DF;
+					};
+				};
+			};
+			buildConfigurationList = A95C36F229A57FD000C3F4DF /* Build configuration list for PBXProject "Reveri" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A95C36EE29A57FD000C3F4DF;
+			productRefGroup = A95C36F829A57FD000C3F4DF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A95C36F629A57FD000C3F4DF /* Reveri */,
+				A95C370629A57FD100C3F4DF /* ReveriTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A95C36F529A57FD000C3F4DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A95C370229A57FD100C3F4DF /* Preview Assets.xcassets in Resources */,
+				A95C36FF29A57FD100C3F4DF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A95C370529A57FD100C3F4DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A95C36F329A57FD000C3F4DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A95C373629A5870300C3F4DF /* CartService.swift in Sources */,
+				A95C373329A585D600C3F4DF /* ProductListView.swift in Sources */,
+				A95C36FD29A57FD000C3F4DF /* ContentView.swift in Sources */,
+				A95C372929A580DD00C3F4DF /* Product.swift in Sources */,
+				A95C36FB29A57FD000C3F4DF /* ReveriApp.swift in Sources */,
+				A95C373229A585D600C3F4DF /* ProductListViewModel.swift in Sources */,
+				A95C372629A5801B00C3F4DF /* ApiService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A95C370329A57FD100C3F4DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A95C372F29A584D600C3F4DF /* ApiServiceIntegrationTests.swift in Sources */,
+				A95C370C29A57FD100C3F4DF /* ProductTests.swift in Sources */,
+				A95C373829A5889900C3F4DF /* CartServiceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A95C370929A57FD100C3F4DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A95C36F629A57FD000C3F4DF /* Reveri */;
+			targetProxy = A95C370829A57FD100C3F4DF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A95C371929A57FD100C3F4DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A95C371A29A57FD100C3F4DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A95C371C29A57FD100C3F4DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Reveri/Preview Content\"";
+				DEVELOPMENT_TEAM = 58TN26CK22;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.arjinc.Reveri;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A95C371D29A57FD100C3F4DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Reveri/Preview Content\"";
+				DEVELOPMENT_TEAM = 58TN26CK22;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.arjinc.Reveri;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A95C371F29A57FD100C3F4DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 58TN26CK22;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.arjinc.ReveriTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Reveri.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Reveri";
+			};
+			name = Debug;
+		};
+		A95C372029A57FD100C3F4DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 58TN26CK22;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.arjinc.ReveriTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Reveri.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Reveri";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A95C36F229A57FD000C3F4DF /* Build configuration list for PBXProject "Reveri" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A95C371929A57FD100C3F4DF /* Debug */,
+				A95C371A29A57FD100C3F4DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A95C371B29A57FD100C3F4DF /* Build configuration list for PBXNativeTarget "Reveri" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A95C371C29A57FD100C3F4DF /* Debug */,
+				A95C371D29A57FD100C3F4DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A95C371E29A57FD100C3F4DF /* Build configuration list for PBXNativeTarget "ReveriTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A95C371F29A57FD100C3F4DF /* Debug */,
+				A95C372029A57FD100C3F4DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A95C36EF29A57FD000C3F4DF /* Project object */;
+}
