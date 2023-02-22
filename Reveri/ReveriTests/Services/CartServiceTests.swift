@@ -36,7 +36,7 @@ final class CartServiceTests: XCTestCase {
         let service = CartService()
         let productMock = Product.mock
         // When
-        service.remove(product: productMock, removeFromList: true)
+        service.remove(product: productMock)
         // Then
         XCTAssertEqual(service.cartProducts, [])
     }
@@ -47,7 +47,7 @@ final class CartServiceTests: XCTestCase {
         let productMock = Product.mock
         // When
         service.add(product: productMock)
-        service.remove(product: productMock, removeFromList: false)
+        service.remove(product: productMock.id)
         // Then
         XCTAssertEqual(service.cartProducts, [.init(product: productMock, count: 0)])
     }
@@ -58,7 +58,7 @@ final class CartServiceTests: XCTestCase {
         let productMock = Product.mock
         // When
         service.add(product: productMock)
-        service.remove(product: productMock, removeFromList: true)
+        service.remove(product: productMock)
         // Then
         XCTAssertEqual(service.cartProducts, [])
     }

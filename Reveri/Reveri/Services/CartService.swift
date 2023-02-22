@@ -32,6 +32,7 @@ final class CartService: CartServiceProtocol, ObservableObject {
     
     func add(product: Product) {
         if let index = cartProducts.firstIndex(where: { $0.product.id == product.id }) {
+            guard cartProducts[index].count < product.stock else { return }
             cartProducts[index].count += 1
         } else {
             cartProducts.append(.init(product: product, count: 1))
@@ -40,6 +41,7 @@ final class CartService: CartServiceProtocol, ObservableObject {
 
     func add(product id: Int) {
         if let index = cartProducts.firstIndex(where: { $0.product.id == id }) {
+            guard cartProducts[index].count < cartProducts[index].product.stock else { return }
             cartProducts[index].count += 1
         }
     }

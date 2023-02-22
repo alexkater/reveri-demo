@@ -35,13 +35,17 @@ struct CartView: View {
                     Button(action: { viewModel.remove(product: cell.id) }) {
                         Image(systemName: "minus")
                     }
+                    .disabled(cell.isMinusDisabled)
                     Text("\(cell.count)")
                     Button(action: { viewModel.add(product: cell.id) }) {
                         Image(systemName: "plus")
                     }
+                    .disabled(cell.isPlusDisabled)
                 }
+                .buttonStyle(BorderlessButtonStyle())
             }
         }
+        .navigationTitle("Cart")
     }
 }
 
@@ -54,7 +58,7 @@ struct CartView_Previews: PreviewProvider {
                 title: "title",
                 price: "1 USD",
                 count: 1,
-                maxCount: 4
+                stock: 4
             )
         ]))
     }

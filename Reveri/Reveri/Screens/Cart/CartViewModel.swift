@@ -16,19 +16,23 @@ final class CartViewModel: ObservableObject {
         let title: String
         let price: String
         let count: Int
-        let maxCount: Int
+        let stock: Int
 
-        var isMinusDisabled: Bool { count > 0 }
-        var isPlusDisabled: Bool { count <= maxCount }
+        var isMinusDisabled: Bool { count == 0 }
+        var isPlusDisabled: Bool { count >= stock }
     }
 
     @Published var cells: [CellViewModel] = []
 
     // TODO: - Improve here with DI
-    let cartService: CartServiceProtocol = CartService.shared
+    let cartService: CartServiceProtocol
     var subscriptions = Set<AnyCancellable>()
 
-    init(cells: [CellViewModel]) {
+    init(
+        cells: [CellViewModel],
+        cartService: CartServiceProtocol = CartService.shared
+    ) {
+        self.cartService = cartService
         self.cells = cells
 
         cartService
@@ -42,7 +46,7 @@ final class CartViewModel: ObservableObject {
                             // TODO: - Improve with local currency formatter
                             price: "\(cartProduct.product.price) $",
                             count: cartProduct.count,
-                            maxCount: cartProduct.product.stock
+                            stock: cartProduct.product.stock
                         )
                 })
             }

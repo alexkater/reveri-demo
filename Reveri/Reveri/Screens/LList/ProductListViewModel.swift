@@ -27,15 +27,31 @@ final class ProductListViewModel: ObservableObject {
 
     @Published var state = State.loading
     @Published var maxReached = false
+    @Published var isCartDisabled = true
 
     // TODO: - Same here, use DI somehow
-    var cartService: CartServiceProtocol = CartService.shared
-    var apiService: ApiServiceProtocol = ApiService()
+    var cartService: CartServiceProtocol
+    var apiService: ApiServiceProtocol
+
     private var products: Set<Product> = []
     private var currentPage: Int = 0
+    private var subscriptions = Set<AnyCancellable>()
 
-    init(state: State = State.loading) {
+    init(
+        state: State = State.loading,
+        cartService: CartServiceProtocol = CartService.shared,
+        apiService: ApiServiceProtocol = ApiService()
+    ) {
         self.state = state
+        self.cartService = cartService
+        self.apiService = apiService
+        
+        cartService.cartProductsPublished
+            .subscribe(on: RunLoop.main)
+            .sink { [weak self] products in
+                self?.isCartDisabled = products.isEmpty
+        }
+        .store(in: &subscriptions)
     }
 
     func fetchMore() {

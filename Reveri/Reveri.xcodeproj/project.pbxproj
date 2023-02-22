@@ -21,6 +21,8 @@
 		A95C373829A5889900C3F4DF /* CartServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95C373729A5889900C3F4DF /* CartServiceTests.swift */; };
 		A95C373C29A5952600C3F4DF /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95C373B29A5952600C3F4DF /* CartView.swift */; };
 		A95C373E29A5952E00C3F4DF /* CartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95C373D29A5952E00C3F4DF /* CartViewModel.swift */; };
+		A95C374129A5A39700C3F4DF /* CartViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95C374029A5A39700C3F4DF /* CartViewModelTests.swift */; };
+		A95C374329A5A67000C3F4DF /* ProductListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95C374229A5A67000C3F4DF /* ProductListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,8 @@
 		A95C373729A5889900C3F4DF /* CartServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartServiceTests.swift; sourceTree = "<group>"; };
 		A95C373B29A5952600C3F4DF /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
 		A95C373D29A5952E00C3F4DF /* CartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewModel.swift; sourceTree = "<group>"; };
+		A95C374029A5A39700C3F4DF /* CartViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewModelTests.swift; sourceTree = "<group>"; };
+		A95C374229A5A67000C3F4DF /* ProductListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +117,7 @@
 		A95C370A29A57FD100C3F4DF /* ReveriTests */ = {
 			isa = PBXGroup;
 			children = (
+				A95C373F29A5A38600C3F4DF /* ViewModel */,
 				A95C372D29A584CA00C3F4DF /* Services */,
 				A95C372A29A5834900C3F4DF /* Model */,
 			);
@@ -178,6 +183,15 @@
 				A95C373D29A5952E00C3F4DF /* CartViewModel.swift */,
 			);
 			path = Cart;
+			sourceTree = "<group>";
+		};
+		A95C373F29A5A38600C3F4DF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A95C374029A5A39700C3F4DF /* CartViewModelTests.swift */,
+				A95C374229A5A67000C3F4DF /* ProductListViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -296,6 +310,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A95C374129A5A39700C3F4DF /* CartViewModelTests.swift in Sources */,
+				A95C374329A5A67000C3F4DF /* ProductListViewModel.swift in Sources */,
 				A95C372F29A584D600C3F4DF /* ApiServiceIntegrationTests.swift in Sources */,
 				A95C370C29A57FD100C3F4DF /* ProductTests.swift in Sources */,
 				A95C373829A5889900C3F4DF /* CartServiceTests.swift in Sources */,

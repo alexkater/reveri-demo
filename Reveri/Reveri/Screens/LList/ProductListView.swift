@@ -26,6 +26,10 @@ struct ProductListView: View {
                             ProgressView()
                         }
                         .ignoresSafeArea()
+                        .onAppear {
+                            // TODO: - Fectch here as this is only visible first time
+                            viewModel.fetchMore()
+                        }
                 }
                 switch viewModel.state {
                 case .error:
@@ -76,18 +80,16 @@ struct ProductListView: View {
             .navigationBarItems(
                 trailing: NavigationLink(
                     destination: {
-
+                        CartView(viewModel: .init(cells: []))
                     },
                     label: {
                         Image(systemName: "cart.fill")
-                            .foregroundColor(.primary)
+                            .foregroundColor(viewModel.isCartDisabled ? .secondary : .primary)
                     }
                 )
+                .disabled(viewModel.isCartDisabled)
             )
-        }
-        // TODO: - I don't like this approach as everytime this screens appears for the user new data will be fetched
-        .onAppear {
-            viewModel.fetchMore()
+            .navigationTitle("Products")
         }
     }
 }
