@@ -6,14 +6,19 @@
 //
 
 import Foundation
+import Combine
 
 protocol CartServiceProtocol {
 
+    var cartProductsPublished: AnyPublisher<[CartService.CartProduct], Never> { get }
+
     func add(product: Product)
-    func remove(product: Product, removeFromList: Bool)
+    func add(product id: Int)
+    func remove(product: Product)
+    func remove(product id: Int)
 }
 
-final class CartService: CartServiceProtocol {
+final class CartService: CartServiceProtocol, ObservableObject {
     // TODO: - Improve and use DI somehow
     static let shared = CartService()
 
@@ -22,8 +27,9 @@ final class CartService: CartServiceProtocol {
         var count: Int
     }
 
-    var cartProducts: [CartProduct] = []
-
+    @Published var cartProducts: [CartProduct] = []
+    var cartProductsPublished: AnyPublisher<[CartProduct], Never> { $cartProducts.eraseToAnyPublisher() }
+    
     func add(product: Product) {
         if let index = cartProducts.firstIndex(where: { $0.product.id == product.id }) {
             cartProducts[index].count += 1
@@ -32,14 +38,27 @@ final class CartService: CartServiceProtocol {
         }
     }
 
-    func remove(product: Product, removeFromList: Bool) {
-        // TODO: - This logic maybe could be improved, keep it simple for now
+    func add(product id: Int) {
+        if let index = cartProducts.firstIndex(where: { $0.product.id == id }) {
+            cartProducts[index].count += 1
+        }
+    }
+
+    func remove(product: Product) {
         if let index = cartProducts.firstIndex(where: { $0.product.id == product.id }) {
             if cartProducts[index].count > 0 {
                 cartProducts[index].count -= 1
-                if cartProducts[index].count <= 0 && removeFromList {
+                if cartProducts[index].count <= 0 {
                     cartProducts.remove(at: index)
                 }
+            }
+        }
+    }
+
+    func remove(product id: Int) {
+        if let index = cartProducts.firstIndex(where: { $0.product.id == id }) {
+            if cartProducts[index].count > 0 {
+                cartProducts[index].count -= 1
             }
         }
     }

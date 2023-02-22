@@ -19,6 +19,8 @@
 		A95C373329A585D600C3F4DF /* ProductListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95C373129A585D600C3F4DF /* ProductListView.swift */; };
 		A95C373629A5870300C3F4DF /* CartService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95C373529A5870300C3F4DF /* CartService.swift */; };
 		A95C373829A5889900C3F4DF /* CartServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95C373729A5889900C3F4DF /* CartServiceTests.swift */; };
+		A95C373C29A5952600C3F4DF /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95C373B29A5952600C3F4DF /* CartView.swift */; };
+		A95C373E29A5952E00C3F4DF /* CartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95C373D29A5952E00C3F4DF /* CartViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,8 @@
 		A95C373129A585D600C3F4DF /* ProductListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListView.swift; sourceTree = "<group>"; };
 		A95C373529A5870300C3F4DF /* CartService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartService.swift; sourceTree = "<group>"; };
 		A95C373729A5889900C3F4DF /* CartServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartServiceTests.swift; sourceTree = "<group>"; };
+		A95C373B29A5952600C3F4DF /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
+		A95C373D29A5952E00C3F4DF /* CartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,10 +156,28 @@
 		A95C373429A585E900C3F4DF /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				A95C373A29A5951500C3F4DF /* Cart */,
+				A95C373929A5950E00C3F4DF /* LList */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		A95C373929A5950E00C3F4DF /* LList */ = {
+			isa = PBXGroup;
+			children = (
 				A95C373029A585D600C3F4DF /* ProductListViewModel.swift */,
 				A95C373129A585D600C3F4DF /* ProductListView.swift */,
 			);
-			path = Screens;
+			path = LList;
+			sourceTree = "<group>";
+		};
+		A95C373A29A5951500C3F4DF /* Cart */ = {
+			isa = PBXGroup;
+			children = (
+				A95C373B29A5952600C3F4DF /* CartView.swift */,
+				A95C373D29A5952E00C3F4DF /* CartViewModel.swift */,
+			);
+			path = Cart;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,6 +286,8 @@
 				A95C372929A580DD00C3F4DF /* Product.swift in Sources */,
 				A95C36FB29A57FD000C3F4DF /* ReveriApp.swift in Sources */,
 				A95C373229A585D600C3F4DF /* ProductListViewModel.swift in Sources */,
+				A95C373E29A5952E00C3F4DF /* CartViewModel.swift in Sources */,
+				A95C373C29A5952600C3F4DF /* CartView.swift in Sources */,
 				A95C372629A5801B00C3F4DF /* ApiService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
